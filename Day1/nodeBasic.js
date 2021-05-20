@@ -5,6 +5,7 @@
 // Include Modules
 // To include a module, use the require() function with the name of the module:
  
+<<<<<<< HEAD
 var http = require('http');
 
 // // Now your application has access to the HTTP module, and is able to create a server:
@@ -18,6 +19,21 @@ http.createServer(function(req,res){
 const fs = require('fs');
 const path = require('path');
 const filepath = path.join('../',"folderName","fileName") 
+=======
+// var http = require('http');
+
+// // Now your application has access to the HTTP module, and is able to create a server:
+
+// http.createServer(function(req,res){
+    
+//         res.writeHead(200,{"contentType":"text/html"});
+//         res.end("hello !World");
+// }).listen(8080);
+
+// const fs = require('fs');
+// const path = require('path');
+// const filepath = path.join('../',"folderName","fileName") 
+>>>>>>> dbd363938c678d42c2af354c3167037298be29ca
 
 
 // Create Your Own Modules:
@@ -27,9 +43,15 @@ const filepath = path.join('../',"folderName","fileName")
 
 // Example:
 // Create a module that returns the current date and time:
+<<<<<<< HEAD
 exports.myDateTime = function () {
     return Date();
 };
+=======
+// exports.myDateTime = function () {
+//     return Date();
+// };
+>>>>>>> dbd363938c678d42c2af354c3167037298be29ca
 // Use the exports keyword to make properties and methods available outside the module file.
 
 

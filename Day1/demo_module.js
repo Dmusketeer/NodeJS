@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 var http = require('http');
 var dt = require('./myFirstModeule');
 
@@ -7,6 +8,17 @@ http.createServer(function (req, res) {
     res.end();
 }).listen(8080);
 console.log("Dheeraj Tiwari");
+=======
+// var http = require('http');
+// var dt = require('./myFirstModeule');
+
+// http.createServer(function (req, res) {
+//     res.writeHead(200, { 'Content-Type': 'text/html' });
+//     res.write("The date and time are currently: " + dt.myDateTime());
+//     res.end();
+// }).listen(8080);
+// console.log("Dheeraj Tiwari");
+>>>>>>> dbd363938c678d42c2af354c3167037298be29ca
 
 var s_c = require('./square_cube.js');
 

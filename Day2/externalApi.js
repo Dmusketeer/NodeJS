@@ -1,2 +1,2 @@
-const superhero=require('superheros');
+const superhero=require('superhero');
 console.log(superhero.random());
