@@ -5,7 +5,7 @@ const app = express();
 const http =require("http").Server(app);
 const path = require("path")
 const io = require("socket.io")(http);
-const mongoose = require("mongoose");MPASSWORD = process.env.MONGODB_PASSWORD; 
+const mongoose = require("mongoose");
 
 
 app.use(express.static(__dirname));
