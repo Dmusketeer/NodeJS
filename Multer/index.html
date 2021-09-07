@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multer file Upload</title>
+</head>
+
+<body>
+    <div class="box">
+        <form action="/uploadfile" ,method="POST" ,enctype="multipart/form-data">
+            <input type="file" name="myFile">
+            <input type="submit" value="Upload file">
+        </form> <br><br>
+        <form action="/uploadmultiple" ,method="POST" ,enctype="multipart/form-data">
+            <input type="file" name="myFiles" multiple>
+            <input type="submit" value="Upload files">
+        </form><br><br>
+        <form action="/uploadphoto" ,method="POST" ,enctype="multipart/form-data">
+            <input type="file" name="myImage" accept="image/*">
+            <input type="submit" value="Upload Image">
+        </form>
+
+    </div>
+</body>
+
+</html>
