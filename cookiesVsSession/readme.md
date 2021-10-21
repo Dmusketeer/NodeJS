@@ -1,4 +1,4 @@
-# ------------------------ 🍪Cookies Vs Session 🚟--------------------------
+# ------------------------ 🍪Cookies 🆚 Session  --------------------------
 
 The Session and cookies are used by different websites for storing user's data across different pages of the site. Both session and cookies are important as they keep track of the information provided by a visitor for different purposes. The main difference between both of them is that sessions are saved on the server-side, whereas cookies are saved on the user's browser or client-side. Apart from this, there are also various other differences between both. In this topic, we will understand the detailed description of sessions and cookies and how both are differentiated from each other.
 
