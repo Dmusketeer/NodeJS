@@ -1,7 +1,7 @@
 # ---------------------------- HTTP Status Code ----------------------------
 
 ### What Are HTTP Status Codes?
-- When a client makes a request to the server receives and processes the request, and then sends back the relevant resources along with an HTTP header.
+- When a client makes a request to the server, server receives and processes the request, and then sends back the relevant resources along with an HTTP header.
 - HTTP status codes are delivered to your browser in the HTTP header. While status codes are returned every single time your browser requests a web page or resource, most of the time you don’t see them.
 
 HTTP status codes are divided into 5 “classes”. These are groupings of responses that have similar or related meanings.
