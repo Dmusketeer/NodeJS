@@ -9,7 +9,8 @@ const Port = process.env.PORT || 3000;
 const fs = require('fs');
 
 // use the middleware body parser
-app.use(bodyParser.urlencoded({ extended: true }))
+app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.json())
 
 
 var storage = multer.diskStorage({
