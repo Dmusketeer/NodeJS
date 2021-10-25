@@ -7,36 +7,38 @@ const express = require("express");
 const router = express.Router();
 
 
-module.exports.sendEmail = async (req, res) => {
+
+router.sendMail = async (req, res) => {
     try {
         const schema = Joi.object({ email: Joi.string().email().required() });
         const { error } = schema.validate(req.body);
-        if (error) return res.status(400).send(error.details[0].message);
-
+        if (error) return res.status(400).send(error);
         const user = await User.findOne({ email: req.body.email });
+        // console.log(user);
+
         if (!user)
-            return res.status(400).send("user with given email doesn't exist");
+            return res.status(400).send("user with given email doesn't exist sorry!!");
 
         let token = await Token.findOne({ userId: user._id });
         if (!token) {
             token = await new Token({
                 userId: user._id,
-                token: crypto.randomBytes(32).toString("hex"),
+                Token: crypto.randomBytes(32).toString("hex"),
             }).save();
         }
 
-        const link = `${process.env.BASE_URL}/password-reset/${user._id}/${token.token}`;
+        const link = `${process.env.BASE_URL}/${user._id}/${token.Token}`;
         await sendEmail(user.email, "Password reset", link);
-
         res.send("password reset link sent to your email account");
+
     } catch (error) {
-        res.send("An error occured");
+        res.send("An error occured in sending email");
         console.log(error);
     }
 }
 
 
-module.exports.Reset = async (req, res) => {
+router.Reset = async (req, res) => {
     try {
         const schema = Joi.object({ password: Joi.string().required() });
         const { error } = schema.validate(req.body);
@@ -57,7 +59,9 @@ module.exports.Reset = async (req, res) => {
 
         res.send("password reset sucessfully.");
     } catch (error) {
-        res.send("An error occured");
+        res.send("An error occured in reseting the password");
         console.log(error);
     }
 }
+
+module.exports = router;

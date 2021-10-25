@@ -32,7 +32,7 @@ mongoose.connection.on("error", (error) => {
 
 // routes
 app.use('/api', users)
-app.use('/api', resetPassword)
+app.use('/api/password-reset', resetPassword)
 
 // default page
 app.get('/', (req, res) => {
