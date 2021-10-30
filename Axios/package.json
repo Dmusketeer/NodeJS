@@ -1,0 +1,19 @@
+{
+  "name": "axios",
+  "version": "1.0.0",
+  "description": "Axios",
+  "main": "axios.js",
+  "scripts": {
+    "test": "node axios.js",
+    "start": "nodemon axios.js"
+  },
+  "keywords": [],
+  "author": "Dheeraj",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.24.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.14"
+  }
+}
