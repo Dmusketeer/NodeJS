@@ -35,3 +35,10 @@ axios.put('http://localhost:3000/users/6/', {
 }).then(res => {
     console.log(res.data)
 }).catch(err => console.log(err))
+
+
+// JSON Server DELETE request
+
+axios.delete('http://localhost:3000/users/1/')
+    .then(res => console.log(res.data))
+    .catch(err => console.log(err))
