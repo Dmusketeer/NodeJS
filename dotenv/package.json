@@ -1,0 +1,20 @@
+{
+  "name": "dotenv",
+  "version": "1.0.0",
+  "description": "Dotenv modules facilitate how to load environment variables in JavaScript .",
+  "main": "dotenv.js",
+  "scripts": {
+    "test": "node dotenv.js",
+    "start": "nodemon dotenv.js"
+  },
+  "keywords": [],
+  "author": "Dheeraj",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.14"
+  }
+}
