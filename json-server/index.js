@@ -17,6 +17,13 @@ axios.get('http://localhost:3000/users')
 
 // JSON Server POST request
 
-
+axios.post('http://localhost:3000/users/', {
+    id: 6,
+    first_name: 'Fred',
+    last_name: 'Blair',
+    email: 'freddyb34@yahoo.com'
+}).then(res => {
+    console.log(res.data)
+}).catch(err => console.log(err))
 
 // JSON Server modify data with PUT request
