@@ -42,3 +42,14 @@ axios.put('http://localhost:3000/users/6/', {
 axios.delete('http://localhost:3000/users/1/')
     .then(res => console.log(res.data))
     .catch(err => console.log(err))
+
+
+// JSON Server sorting data
+
+axios.get('http://localhost:3000/users?_sort=last_name&_order=asc')
+    .then(res => {
+        data = res.data;
+        data.forEach(e => {
+            console.log(`${e.first_name}, ${e.last_name}, ${e.email}`)
+        })
+    }).catch(err => console.log(err))
