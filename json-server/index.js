@@ -1,6 +1,7 @@
 const express = require('express')
 const axios = require('axios')
 
+
 // JSON Server GET request
 axios.get('http://localhost:3000/users')
     .then(res => {
