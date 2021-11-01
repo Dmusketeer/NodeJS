@@ -1,0 +1,15 @@
+{
+  "name": "eventemitter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "eventEmitters.js",
+  "scripts": {
+    "start": "node eventEmitter.js"
+  },
+  "keywords": [],
+  "author": "Dheeraj",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.24.0"
+  }
+}
