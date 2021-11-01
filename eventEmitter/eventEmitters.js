@@ -1,6 +1,5 @@
-// Importing events
-const EventEmitter = require('events')
-const axios = require('axios')
+// Importing eventsconst axios = require('axios')
+const eventEmitter = require('events')
 // Initializing event emitter instances
 const eventEmitter = new EventEmitter()
 
