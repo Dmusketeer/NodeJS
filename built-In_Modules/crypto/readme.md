@@ -35,3 +35,13 @@ HMAC ( keyed-hash message authentication code ) is a kind of MAC ( Message authe
 - md5 HMAC
 
 ## [Crypto Properties and Methods ✴ ](https://www.w3schools.com/nodejs/ref_crypto.asp)
+
+
+
+
+
+
+
+
+
+
